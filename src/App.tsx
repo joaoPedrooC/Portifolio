@@ -4,6 +4,7 @@ import { ContactsSection } from "./components/Sections/ContactsSection/ContactsS
 import { ProjectsSection } from "./components/Sections/ProjectsSection/ProjectsSection"
 import { TechnologiesSection } from "./components/Sections/TechnologiesSection/TechnologiesSection"
 import './styles/index.scss'
+import 'animate.css'
 
 export const App = () => {
   return (

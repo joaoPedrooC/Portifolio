@@ -11,7 +11,7 @@ export const HeaderMobile = () => {
 			</div>
 			
 			{isActive ?
-				<div className={styles.headerMobile__container}>
+				<div className={`${styles.headerMobile__container} animate__animated animate__bounceIn`}>
 					<nav>
 						<ul className={styles.headerMobile__list}>
 							<li>
