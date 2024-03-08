@@ -18,7 +18,11 @@
   }
 
   &.quaternary {
-    font-size: clamp(.8rem, 5vw, 1rem);
+    font-size: clamp(.8rem, 4vw, 1rem);
     font-weight: 400;
+  }
+
+  &.button {
+    font-size: clamp(.4rem, 4vw, 1rem);
   }
 }
