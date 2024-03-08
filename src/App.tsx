@@ -1,5 +1,6 @@
 import { Header } from "./components/Header/Header"
 import { AboutSection } from "./components/Sections/AboutSection/AboutSection"
+import { TechnologiesSection } from "./components/Sections/TechnologiesSection/TechnologiesSection"
 import './styles/index.scss'
 
 export const App = () => {
@@ -8,6 +9,7 @@ export const App = () => {
       <Header />
       <main>
         <AboutSection />
+        <TechnologiesSection />
       </main>
     </>
   )
