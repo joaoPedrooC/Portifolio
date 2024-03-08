@@ -5,7 +5,7 @@ import styles from './style.module.scss';
 
 export const AboutSection = () => {
 	return (
-		<section className={styles.about__section}>
+		<section className={styles.about__section} id='about'>
 			<div className='container'>
 				<h1 className='font primary'>&lt;Desenvolvedor web Full Stack&gt;</h1>
 				<p className='font tertiary'>

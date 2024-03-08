@@ -1,5 +1,9 @@
 .technologiesSection__container {
-  min-height: 70vh;
+  min-height: 45vh;
+
+  @media (min-width: 600px) {
+    min-height: 100vh;
+  }
 
   & > div {
     display: flex;

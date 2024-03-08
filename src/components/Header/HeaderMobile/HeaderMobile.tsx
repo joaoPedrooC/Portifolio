@@ -15,16 +15,16 @@ export const HeaderMobile = () => {
 					<nav>
 						<ul className={styles.headerMobile__list}>
 							<li>
-								<a href='' className='font quaternary'>Início</a>
+								<a href='#about' className='font quaternary'>Início</a>
 							</li>
 							<li>
-								<a href='' className='font quaternary'>Tecnologias</a>
+								<a href='#technologies' className='font quaternary'>Tecnologias</a>
 							</li>
 							<li>
-								<a href='' className='font quaternary'>Projetos</a>
+								<a href='#projects' className='font quaternary'>Projetos</a>
 							</li>
 							<li>
-								<a href='' className='font quaternary'>Contato</a>
+								<a href='#contact' className='font quaternary'>Contato</a>
 							</li>
 						</ul>
 					</nav>

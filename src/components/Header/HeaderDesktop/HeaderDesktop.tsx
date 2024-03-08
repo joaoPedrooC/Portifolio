@@ -5,16 +5,16 @@ export const HeaderDesktop = () => {
 		<nav className={styles.headerDesktop__container}>
 			<ul>
 				<li className={styles.headerDesktop__listItem}>
-					<a href='' className='font quaternary'>Início</a>
+					<a href='#top' className='font quaternary'>Início</a>
 				</li>
 				<li className={styles.headerDesktop__listItem}>
-					<a href='' className='font quaternary'>Tecnologias</a>
+					<a href='#technologies' className='font quaternary'>Tecnologias</a>
 				</li>
 				<li className={styles.headerDesktop__listItem}>
-					<a href='' className='font quaternary'>Projetos</a>
+					<a href='#projects' className='font quaternary'>Projetos</a>
 				</li>
 				<li className={styles.headerDesktop__listItem}>
-					<a href='' className='font quaternary'>Contato</a>
+					<a href='#contact' className='font quaternary'>Contato</a>
 				</li>
 			</ul>
 		</nav>
