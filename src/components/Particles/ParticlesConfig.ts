@@ -1,3 +1,4 @@
+//@ts-nocheck
 /*!
  * A lightweight, dependency-free and responsive javascript plugin for particle backgrounds.
  *
@@ -169,7 +170,7 @@ export const Particles = (function (t, e) {
 		}),
 		(n.prototype._animate = function () {
 			var e = this;
-			e._draw(), (e._animation = t.requestAnimFrame(e._animate));
+			e._draw(), (e._animation = t.requestAnimationFrame(e._animate));
 		}),
 		(n.prototype.resumeAnimation = function () {
 			this._animation || this._animate();
@@ -181,8 +182,8 @@ export const Particles = (function (t, e) {
 				else
 					(
 						t.cancelAnimationFrame ||
-						t.webkitCancelAnimationFrame ||
-						t.mozCancelAnimationFrame
+						t.cancelAnimationFrame ||
+						t.cancelAnimationFrame
 					)(e._animation);
 				e._animation = null;
 			}
@@ -300,11 +301,11 @@ export const Particles = (function (t, e) {
 				(n.x = i),
 				(n.y = o);
 		}),
-		(t.requestAnimFrame = (function () {
+		(t.requestAnimationFrame = (function () {
 			var e =
 				t.requestAnimationFrame ||
-				t.webkitRequestAnimationFrame ||
-				t.mozRequestAnimationFrame;
+				t.requestAnimationFrame ||
+				t.requestAnimationFrame;
 			return (
 				e ||
 				((this._usingPolyfill = !0),
