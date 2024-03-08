@@ -15,8 +15,8 @@ export const ProjectsCard = ({ project }: IProjectsCardProps) => {
 			</div>
 			<p className='font quaternary'>{project.description}</p>
 			<div>
-				<a className='font button' href={project.githubUrl}>Código fonte</a>
-				{ project.deployUrl ? <a className='font button' href={project.deployUrl}>Deploy</a> : null }
+				<a className='font button' href={project.githubUrl} target='_blank'>Código fonte</a>
+				{ project.deployUrl ? <a className='font button' href={project.deployUrl} target='_blank'>Deploy</a> : null }
 			</div>
 		</li>
 	);
