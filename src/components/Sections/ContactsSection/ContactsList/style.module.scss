@@ -1,0 +1,16 @@
+.contactsList__container {
+  display: flex;
+  align-items: center;
+
+  padding: 2rem 0 4rem;
+  gap: 2rem;
+
+  & > li > a > svg {
+    color: var(--color-black-1);
+
+    width: clamp(30px, 5vw, 60px);
+    height: clamp(30px, 5vw, 60px);
+    
+    cursor: pointer;
+  }
+}
