@@ -1,0 +1,34 @@
+.about__section {
+  display: flex;
+  align-items: center;
+
+  height: 100vh;
+  width: 100%;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+
+    gap: clamp(1rem, 5vw, 2rem);
+
+    & > h1 {
+      word-break: break-all;
+    }
+
+    & > a > svg {
+      height: clamp(50px, 10vw, 80px);
+			width: clamp(50px, 10vw, 80px);
+
+			border-radius: 100%;
+
+			border: 2px solid rgba(0, 0, 0, 0.3);
+
+      color: var(--color-black-1);
+
+			cursor: pointer;
+    }
+  }
+}
