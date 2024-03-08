@@ -16,8 +16,8 @@ export const ProjectsSection = () => {
   }, [])
 
   return (
-    <section className={styles.projectsSection__container} id="projects">
-      <div className={`container ${isVisible ? 'animate__animated animate__fadeInUp' : ''}`}>
+    <section className={styles.projectsSection__container}>
+      <div className={`container ${isVisible ? 'animate__animated animate__fadeInUp' : ''}`} id="projects">
         <h2 className="font secondary">Meus projetos</h2>
         <ProjectsList />
       </div>
