@@ -3,15 +3,28 @@ import styles from './style.module.scss';
 
 export const HeaderMobile = () => {
 	const [isActive, setIsActive] = useState<boolean>(false);
+	const [isClosing, setIsClosing] = useState<boolean>(false)
+
+	const handleActive = () => {
+		if(!isActive) {
+			return setIsActive(true)
+		}
+
+		setIsClosing(true)
+		setTimeout(() => {
+			setIsActive(false)
+			setIsClosing(false)
+		}, 600)
+	}
 
 	return (
 		<>
-			<div className={`${styles.menu__container} ${isActive ? styles.active : ''} `} onClick={() => setIsActive(!isActive)}>
+			<div className={`${styles.menu__container} ${isActive ? styles.active : ''} `} onClick={handleActive}>
 				<div></div>
 			</div>
 			
 			{isActive ?
-				<div className={`${styles.headerMobile__container} animate__animated animate__bounceIn`}>
+				<div className={`${styles.headerMobile__container} animate__animated ${!isClosing ? 'animate__bounceIn' : 'animate__bounceOut'}`}>
 					<nav>
 						<ul className={styles.headerMobile__list}>
 							<li>

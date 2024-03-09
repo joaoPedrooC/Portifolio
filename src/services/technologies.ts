@@ -1,8 +1,10 @@
 import { IconType } from "react-icons";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { DiDjango, DiGit } from "react-icons/di";
 import { FaHtml5, FaCss3Alt, FaReact, FaSass, FaNodeJs, FaPython, FaGithub } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiPrisma, SiRedux, SiTypescript } from "react-icons/si";
+import { SiExpress, SiNestjs, SiPrisma, SiRedux, SiTypescript, SiZod } from "react-icons/si";
+import { TbBrandCpp } from "react-icons/tb";
 
 type technologiesListType = IconType[]
 
@@ -19,7 +21,12 @@ export const technologiesList: technologiesListType = [
   FaPython,
   DiDjango,
   DiGit,
-  FaGithub
+  FaGithub,
+  BiLogoPostgresql,
+  SiExpress,
+  SiZod,
+  SiNestjs,
+  TbBrandCpp
 ]
 
 export const technologiesNames: Array<string> = [
@@ -35,5 +42,10 @@ export const technologiesNames: Array<string> = [
   'Python',
   'Django',
   'Git',
-  'GitHub'
+  'GitHub',
+  'PostgreSQL',
+  'Express',
+  'Zod',
+  'NestJS',
+  'C++'
 ]

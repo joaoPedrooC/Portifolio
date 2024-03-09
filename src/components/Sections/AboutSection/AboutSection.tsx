@@ -9,7 +9,9 @@ export const AboutSection = () => {
   const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
     if (entry.isIntersecting) {
       setIsVisible(true)
-    }
+    } else {
+			setIsVisible(false)
+		}
   }))
 
   useEffect(() => {
@@ -21,7 +23,7 @@ export const AboutSection = () => {
 			<div className={`container ${isVisible ? 'animate__animated animate__fadeInDown' : ''}`}>
 				<h1 className='font primary'>&lt;Desenvolvedor web Full Stack&gt;</h1>
 				<p className='font tertiary'>
-					Sou um desenvolvedor web ávido por conhecimento, apreciador de
+					Me chamo João Pedro, um desenvolvedor web ávido por conhecimento, apreciador de
 					desafios lógicos e um entusiasta do desenvolvimento web. Estou sempre
 					buscando aprimorar meus conhecimentos e aberto a oportunidades
 				</p>
