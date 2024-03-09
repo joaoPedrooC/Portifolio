@@ -1,0 +1,13 @@
+.projectsSection__container {
+  min-height: 100vh;
+  margin-top: 3rem;
+
+  padding: 1rem 0;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: clamp(2rem, 5vw, 3.5rem);
+  }
+}
