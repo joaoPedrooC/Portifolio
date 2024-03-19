@@ -9,7 +9,7 @@ export const ProjectsSection = () => {
     if (entry.isIntersecting) {
       setIsVisible(true)
     } else {
-      setIsVisible(true)
+      setIsVisible(false)
     }
   }))
 
@@ -19,7 +19,7 @@ export const ProjectsSection = () => {
 
   return (
     <section className={styles.projectsSection__container}>
-      <div className='container'>
+      <div className='container' id="projects">
         <h2 className={`font secondary ${isVisible ? 'animate__animated animate__fadeInDown' : ''}`} id="projectsTitle">Meus projetos</h2>
         <ProjectsList />
       </div>
