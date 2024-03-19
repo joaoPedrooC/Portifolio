@@ -9,18 +9,18 @@ export const ProjectsSection = () => {
     if (entry.isIntersecting) {
       setIsVisible(true)
     } else {
-      setIsVisible(false)
+      setIsVisible(true)
     }
   }))
 
   useEffect(() => {
-    observer.observe(document.querySelector('#projects')!)
+    observer.observe(document.querySelector('#projectsTitle')!)
   }, [])
 
   return (
     <section className={styles.projectsSection__container}>
-      <div className={`container ${isVisible ? 'animate__animated animate__fadeInDown' : ''}`} id="projects">
-        <h2 className="font secondary">Meus projetos</h2>
+      <div className='container'>
+        <h2 className={`font secondary ${isVisible ? 'animate__animated animate__fadeInDown' : ''}`} id="projectsTitle">Meus projetos</h2>
         <ProjectsList />
       </div>
     </section>
