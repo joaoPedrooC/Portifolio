@@ -24,9 +24,8 @@
 
 			border-radius: 100%;
 
-			border: 2px solid rgba(0, 0, 0, 0.3);
-
-      color: var(--color-black-1);
+			border: 2px solid var(--border-color-1);
+      color: var(--color-primary);
 
 			cursor: pointer;
     }

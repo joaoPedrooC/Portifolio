@@ -8,8 +8,8 @@
 
   z-index: 1;
   
-  background-color: var(--color-white);
-	border-bottom: 2px solid var(--color-black-2);
+  background-color: var(--background-color);
+	border-bottom: 2px solid var(--border-color-1);
 
   & > div {
     display: flex;

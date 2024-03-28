@@ -22,7 +22,8 @@
         
         padding: 1rem;
         
-        filter: drop-shadow(16px 16px 4px var(--color-black-3));
+        color: var(--color-secondary);
+        filter: drop-shadow(16px 16px 4px var(--cards-backdrop-color));
       }
     }
   }

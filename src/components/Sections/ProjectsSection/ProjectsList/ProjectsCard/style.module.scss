@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 
     & > span {
-      border-bottom: 1px solid var(--color-black-3);
+      border-bottom: 1px solid var(--color-secondary-transparent);
     }
   }
 
@@ -21,7 +21,7 @@
     border: none;
     background-color: transparent;
 
-    border-bottom: 1px solid var(--color-black-3);
+    border-bottom: 1px solid var(--color-secondary-transparent);
 
     cursor: pointer;
   }
