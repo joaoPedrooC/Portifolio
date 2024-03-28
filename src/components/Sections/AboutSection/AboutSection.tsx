@@ -1,4 +1,4 @@
-import { ParticlesBackground } from '../../Particles/ParticlesBackground/ParticlesBackground';
+import { ParticlesBackground } from '../../Particles/Particles';
 import { FaGithub } from "react-icons/fa";
 
 import styles from './style.module.scss';
