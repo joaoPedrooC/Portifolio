@@ -2,10 +2,16 @@ import { GiBrazilFlag } from 'react-icons/gi';
 import { LiaFlagUsaSolid } from 'react-icons/lia';
 
 import Select, { OptionsOrGroups, Theme } from 'react-select'
+import { ISelectedLanguageParam } from '../Header/Header'
 
 import styles from './style.module.scss'
 
-export const LanguageSelect = () => {
+interface ILanguageSelectProps {
+  changeLanguage: (selectedLanguage: ISelectedLanguageParam) => void
+  language: string
+}
+
+export const LanguageSelect = ({ changeLanguage, language }: ILanguageSelectProps) => {
   const options: OptionsOrGroups<any, any> = [
     {
       value: 'pt',
@@ -26,7 +32,7 @@ export const LanguageSelect = () => {
   ]
 
 	return (
-		<Select className={styles.language__select} options={options} isSearchable={false} defaultValue={options[0]} theme={(theme): Theme => ({
+		<Select onChange={changeLanguage} className={styles.language__select} options={options} isSearchable={false} defaultValue={options.find(option => option.value === language)} theme={(theme): Theme => ({
       ...theme,
       colors: {
         ...theme.colors,

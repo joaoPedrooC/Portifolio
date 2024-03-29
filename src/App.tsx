@@ -4,8 +4,11 @@ import { AboutSection } from "./components/Sections/AboutSection/AboutSection"
 import { ContactsSection } from "./components/Sections/ContactsSection/ContactsSection"
 import { ProjectsSection } from "./components/Sections/ProjectsSection/ProjectsSection"
 import { TechnologiesSection } from "./components/Sections/TechnologiesSection/TechnologiesSection"
+
 import './styles/index.scss'
 import 'animate.css'
+
+import './i18n'
 
 export const App = () => {
   const [darkMode, setDarkMode] = useState<boolean>(

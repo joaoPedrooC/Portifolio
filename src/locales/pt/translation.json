@@ -1,0 +1,30 @@
+{
+  "headerHome": "Início",
+  "headerTechnologies": "Tecnologias",
+  "headerProjects": "Projetos",
+  "headerContacts": "Contato",
+  
+  "headerWhiteThemeMessage": "Alterar para modo escuro",
+  "headerDarkThemeMessage": "Alterar para modo claro",
+
+  "aboutSectionRole": "Desenvolvedor web Full Stack",
+  "aboutSectionDescription": "Me chamo João Pedro, um desenvolvedor web ávido por conhecimento, apreciador de desafios lógicos e um entusiasta do desenvolvimento web. Estou sempre buscando aprimorar meus conhecimentos e aberto a oportunidades",
+
+  "technologiesSectionTitle": "Minhas tecnologias",
+
+  "projectsSectionTitle": "Meus projetos",
+
+  "projectsSectionFirstProjectDescription": "Este portifólio é um projeto que visa divulgar meus projetos e habilidades, além de fazer você me conhecer um pouco melhor",
+  "projectsSectionSecondProjectDescription": "Contacts é uma aplicação em que você consegue cadastrar, editar, excluir e visualizar seus contatos, além de contar com autenticação e autorização.",
+  "projectsSectionThirdProjectDescription": "Contacts é uma aplicação em que você consegue cadastrar, editar, excluir e visualizar seus contatos, além de contar com autenticação e autorização.",
+  "projectsSectionFourthProjectDescription": "O projeto simula a página de uma hamburgueria, em que você consegue adicionar e remover produtos do carrinho de compras.",
+  "projectsSectionFifthProjectDescription": "O projeto Kenzie Hub é uma aplicação feita com o intuito de os usuários serem capazes de logar no sistema e cadastrar, editar ou deletar as tecnologias que possuem domínio.",
+  "projectsSectionSixthProjectDescription": "O projeto Movies simula uma API rest de uma locadora de filmes, em que você consegue cadastrar, editar, buscar e excluir filmes. A busca por filmes contém paginação.",
+  "projectsSectionSeventhProjectDescription": "O projeto Kimóveis simula uma API rest de uma imobiliária, em que é possível cadastrar, editar, buscar e excluir usuários e imóveis. Além disso, também é possível agendar visitas dos usuários a um imóvel.",
+  "projectsSectionEighthProjectDescription": "O projeto User e Courses simula uma API rest de uma plataforma de cursos, em que é possível cadastrar, editar, buscar e excluir alunos e cursos.",
+
+  "projectsSectionSourceCodeLink": "Código fonte",
+
+  "contactsSectionTitle": "Entre em contato comigo",
+  "contactsSectionMessage": "Você consegue me encontrar nessas redes sociais"
+}

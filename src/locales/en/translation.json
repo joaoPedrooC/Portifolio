@@ -1,0 +1,30 @@
+{
+	"headerHome": "Home",
+	"headerTechnologies": "Technologies",
+	"headerProjects": "Projects",
+	"headerContacts": "Contact",
+
+	"headerWhiteThemeMessage": "Switch to dark mode",
+	"headerDarkThemeMessage": "Switch to light mode",
+
+	"aboutSectionRole": "Full Stack web Developer",
+	"aboutSectionDescription": "My name is João Pedro, and I am a knowledge avid, web development enthusiast and a logic challenges appreciator web developer. I am always trying to improve my knowledge and open to opportunities",
+
+	"technologiesSectionTitle": "My technologies",
+
+	"projectsSectionTitle": "My projects",
+
+	"projectsSectionFirstProjectDescription": "This portfolio is a project wich aims to share my projects and skills, besides It makes you know me a little more",
+	"projectsSectionSecondProjectDescription": "Contacts is an applications where you can register, update, delete and visualize your contacts, besides It counts with authentication and authorization.",
+	"projectsSectionThirdProjectDescription": "Contacts is an applications where you can register, update, delete and visualize your contacts, besides It counts with authentication and authorization.",
+	"projectsSectionFourthProjectDescription": "This projects simulates a burguer shop website, where You can add and remove products from your buying cart.",
+	"projectsSectionFifthProjectDescription": "Kenzie Hub project is an application wich aims the users be able to log in the app and register, update or delete technologies the user masters.",
+	"projectsSectionSixthProjectDescription": "Movies project simulates a rest API from a movie rental store, where you can register, update, search and delete movies. The movies search contains pagination.",
+	"projectsSectionSeventhProjectDescription": "Kimóveis project simulates a rest API from a real estate, wich is possible to register, update, search and delete users and estates. Besides, It is also possible for a user to schedule a visit on a real estate.",
+	"projectsSectionEighthProjectDescription": "User and Courses project simulates a rest API from a course platform, where is possible to register, update, search and delete students and courses.",
+
+	"projectsSectionSourceCodeLink": "Source code",
+
+	"contactsSectionTitle": "Contact me",
+	"contactsSectionMessage": "You can find me on these social medias"
+}

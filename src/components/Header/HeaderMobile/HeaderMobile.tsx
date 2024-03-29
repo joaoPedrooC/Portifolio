@@ -3,15 +3,21 @@ import styles from './style.module.scss';
 import { IoMoonOutline } from 'react-icons/io5';
 import { FiSun } from 'react-icons/fi';
 import { LanguageSelect } from '../../LanguageSelect/LanguageSelect';
+import { useTranslation } from 'react-i18next';
+import { ISelectedLanguageParam } from '../Header';
 
 interface IHeaderMobileProps {
 	darkMode: boolean;
 	setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+	changeLanguage: (selectedLanguage: ISelectedLanguageParam) => void
+	language: string
 }
 
-export const HeaderMobile = ({ darkMode, setDarkMode }: IHeaderMobileProps) => {
+export const HeaderMobile = ({ darkMode, setDarkMode, changeLanguage, language }: IHeaderMobileProps) => {
 	const [isActive, setIsActive] = useState<boolean>(false);
 	const [isClosing, setIsClosing] = useState<boolean>(false);
+
+	const { t } = useTranslation()
 
 	const handleActive = () => {
 		if (!isActive) {
@@ -44,27 +50,27 @@ export const HeaderMobile = ({ darkMode, setDarkMode }: IHeaderMobileProps) => {
 						<ul className={styles.headerMobile__list}>
 							<li>
 								<a href='#about' className='font quaternary'>
-									Início
+									{t('headerHome')}
 								</a>
 							</li>
 							<li>
 								<a href='#technologies' className='font quaternary'>
-									Tecnologias
+									{t('headerTechnologies')}
 								</a>
 							</li>
 							<li>
 								<a href='#projects' className='font quaternary'>
-									Projetos
+									{t('headerProjects')}
 								</a>
 							</li>
 							<li>
 								<a href='#contact' className='font quaternary'>
-									Contato
+									{t('headerContacts')}
 								</a>
 							</li>
 						</ul>
 						<div>
-							<LanguageSelect />
+							<LanguageSelect changeLanguage={changeLanguage} language={language} />
 							<button onClick={() => setDarkMode(!darkMode)}>
 								{!darkMode ? <IoMoonOutline /> : <FiSun />}
 							</button>
