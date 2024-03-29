@@ -3,7 +3,11 @@ import { loadFull } from "tsparticles";
 
 import styles from './style.module.scss'
 
-export const ParticlesBackground = () => {
+interface IAboutSectionProps {
+	darkMode: boolean
+}
+
+export const ParticlesBackground = ({ darkMode }: IAboutSectionProps) => {
   const particlesInit = async (main: any) => {
     await loadFull(main);
   };
@@ -21,7 +25,7 @@ export const ParticlesBackground = () => {
         },
       },
       color: {
-        value: '#000',
+        value: !darkMode ? '#000' : '#fff',
       },
       shape: {
         type: 'circle',

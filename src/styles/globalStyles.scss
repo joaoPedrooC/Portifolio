@@ -1,6 +1,8 @@
 :root {
   --color-primary: #212529;
-  --color-secondary: #000;
+  --color-secondary: #212529;
+  --color-tertiary: #212529;
+
   --color-secondary-transparent: rgba(0, 0, 0, .5);
   
   --border-color-1: rgba(0, 0, 0, .3);
@@ -9,4 +11,22 @@
   --cards-backdrop-color: rgba(0, 0, 0, .3);
   
   --color-white: #fff;
+}
+
+:root.darkmode {
+  --color-primary: #e9ecef;
+
+  --color-secondary: #1864ab;
+  --color-secondary-transparent: #1864ab;
+
+  --border-color-1: #ffffff35;
+  --cards-backdrop-color: #000000;
+
+  --background-color: #101720;
+
+  --color-white: #fff;
+}
+
+main {
+  background-color: var(--background-color);
 }

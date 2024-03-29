@@ -4,14 +4,38 @@
 
   & > ul {
     width: 100%;
+    max-width: 80%;
     height: 100%;
 
     display: flex;
     justify-content: space-between;
   }
 
+  & > .header__themeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--color-primary);
+    background-color: transparent;
+
+    padding: .3rem;
+    border-radius: 0.25rem;
+
+    cursor: pointer;
+
+    & > svg {
+      width: 18px;
+      height: 18px;
+
+      color: var(--color-primary);
+    }
+  }
+
   @media (min-width: 500px) {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -22,7 +46,7 @@
     position: absolute;
     top: 0;
 
-    color: var(--color-black-1);
+    color: var(--color-primary);
 
     transform: scale(.6);
     opacity: 0;

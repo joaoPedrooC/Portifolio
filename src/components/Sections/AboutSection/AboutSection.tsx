@@ -4,7 +4,11 @@ import { FaGithub } from "react-icons/fa";
 import styles from './style.module.scss';
 import { useEffect, useState } from 'react';
 
-export const AboutSection = () => {
+interface IAboutSectionProps {
+	darkMode: boolean
+}
+
+export const AboutSection = ({ darkMode }: IAboutSectionProps) => {
 	const [isVisible, setIsVisible] = useState<boolean>(false)
   const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -31,7 +35,7 @@ export const AboutSection = () => {
           <FaGithub />
         </a>
 			</div>
-			<ParticlesBackground />
+			<ParticlesBackground darkMode={darkMode} />
 		</section>
 	);
 };

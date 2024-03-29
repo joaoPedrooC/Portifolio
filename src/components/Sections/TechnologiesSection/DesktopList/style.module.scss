@@ -28,6 +28,7 @@
 
       &:disabled {
         cursor: not-allowed;
+				opacity: .3;
       }
 
       border: 2px solid var(--border-color-1);
@@ -41,6 +42,8 @@
 			& > svg {
         width: 100%;
         height: 100%;
+
+				color: var(--color-primary);
 			}
 		}
 
