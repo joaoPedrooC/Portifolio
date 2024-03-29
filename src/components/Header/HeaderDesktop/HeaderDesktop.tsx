@@ -33,6 +33,9 @@ export const HeaderDesktop = ({ darkMode, setDarkMode }: IHeaderDesktopProps) =>
 				</li>
 			</ul>
 			<button className={styles.header__themeButton} onClick={() => setDarkMode(!darkMode)}>
+				<div className={`${styles.themeButton__title}`}>
+					<span className='font quaternary'>Alterar para {darkMode ? 'modo claro' : 'modo escuro'}</span>
+				</div>
 				{!darkMode ? <IoMoonOutline /> : <FiSun />}
 			</button>
 		</nav>

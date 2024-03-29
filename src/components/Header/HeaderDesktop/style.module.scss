@@ -22,13 +22,55 @@
     padding: .3rem;
     border-radius: 0.25rem;
 
+    position: relative;
     cursor: pointer;
+
+    & > .themeButton__title {
+      position: absolute;
+      bottom: -4rem;
+      right: 0;
+
+      opacity: 0;
+
+      transition: opacity .3s ease-in-out;
+
+      padding: .3rem .5rem;
+      width: max-content;
+
+      background-color: var(--color-primary);
+      border-radius: 4px;
+
+      pointer-events: none;
+
+      & > span {
+        color: var(--background-color);
+      }
+
+      &::after {
+        content: '';
+        width: 15px;
+        height: 15px;
+
+        position: absolute;
+        right: 3.5px;
+        top: -.4rem;
+
+        transform: rotate(45deg);
+
+        background-color: var(--color-primary);
+      }
+    }
 
     & > svg {
       width: 18px;
       height: 18px;
 
       color: var(--color-primary);
+    }
+
+    &:hover > div {
+      display: block;
+      opacity: 1;
     }
   }
 
