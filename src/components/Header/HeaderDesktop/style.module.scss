@@ -11,70 +11,12 @@
     justify-content: space-between;
   }
 
-  & > .header__themeButton {
+  & > div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border: 1px solid var(--color-primary);
-    background-color: transparent;
-
-    padding: .3rem;
-    border-radius: 0.25rem;
-
-    position: relative;
-    cursor: pointer;
-
-    & > .themeButton__title {
-      position: absolute;
-      bottom: -4rem;
-      right: 0;
-
-      opacity: 0;
-
-      transition: opacity .3s ease-in-out;
-
-      padding: .3rem .5rem;
-      width: max-content;
-
-      background-color: var(--color-primary);
-      border-radius: 4px;
-
-      pointer-events: none;
-
-      & > span {
-        color: var(--background-color);
-      }
-
-      &::after {
-        content: '';
-        width: 15px;
-        height: 15px;
-
-        position: absolute;
-        right: 3.5px;
-        top: -.4rem;
-
-        transform: rotate(45deg);
-
-        background-color: var(--color-primary);
-      }
-    }
-
-    & > svg {
-      width: 18px;
-      height: 18px;
-
-      color: var(--color-primary);
-    }
-
-    &:hover > div {
-      display: block;
-      opacity: 1;
-    }
+    gap: clamp(.3rem, 2vw, 2rem);
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 725px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,5 +62,68 @@
     transform: scale(1);
     opacity: 1;
     left: -10px;
+  }
+}
+
+.header__themeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--color-primary);
+  background-color: transparent;
+
+  padding: .3rem;
+  border-radius: 0.25rem;
+
+  position: relative;
+  cursor: pointer;
+
+  .themeButton__title {
+    position: absolute;
+    bottom: -4rem;
+    right: 0;
+
+    opacity: 0;
+
+    transition: opacity .3s ease-in-out;
+
+    padding: .3rem .5rem;
+    width: max-content;
+
+    background-color: var(--color-primary);
+    border-radius: 4px;
+
+    pointer-events: none;
+
+    & > span {
+      color: var(--background-color);
+    }
+
+    &::after {
+      content: '';
+      width: 15px;
+      height: 15px;
+
+      position: absolute;
+      right: 3.5px;
+      top: -.4rem;
+
+      transform: rotate(45deg);
+
+      background-color: var(--color-primary);
+    }
+  }
+
+  & > svg {
+    width: 18px;
+    height: 18px;
+
+    color: var(--color-primary);
+  }
+
+  &:hover > div {
+    display: block;
+    opacity: 1;
   }
 }

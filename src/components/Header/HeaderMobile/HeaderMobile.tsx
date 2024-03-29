@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './style.module.scss';
 import { IoMoonOutline } from 'react-icons/io5';
 import { FiSun } from 'react-icons/fi';
+import { LanguageSelect } from '../../LanguageSelect/LanguageSelect';
 
 interface IHeaderMobileProps {
 	darkMode: boolean;
@@ -63,6 +64,7 @@ export const HeaderMobile = ({ darkMode, setDarkMode }: IHeaderMobileProps) => {
 							</li>
 						</ul>
 						<div>
+							<LanguageSelect />
 							<button onClick={() => setDarkMode(!darkMode)}>
 								{!darkMode ? <IoMoonOutline /> : <FiSun />}
 							</button>

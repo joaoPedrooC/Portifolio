@@ -1,6 +1,7 @@
 import { FiSun } from 'react-icons/fi';
 import { IoMoonOutline } from 'react-icons/io5';
 import styles from './style.module.scss';
+import { LanguageSelect } from '../../LanguageSelect/LanguageSelect';
 
 interface IHeaderDesktopProps {
 	darkMode: boolean
@@ -32,12 +33,15 @@ export const HeaderDesktop = ({ darkMode, setDarkMode }: IHeaderDesktopProps) =>
 					</a>
 				</li>
 			</ul>
-			<button className={styles.header__themeButton} onClick={() => setDarkMode(!darkMode)}>
-				<div className={`${styles.themeButton__title}`}>
-					<span className='font quaternary'>Alterar para {darkMode ? 'modo claro' : 'modo escuro'}</span>
-				</div>
-				{!darkMode ? <IoMoonOutline /> : <FiSun />}
-			</button>
+			<div>
+				<LanguageSelect />
+				<button className={styles.header__themeButton} onClick={() => setDarkMode(!darkMode)}>
+					<div className={`${styles.themeButton__title}`}>
+						<span className='font quaternary'>Alterar para {darkMode ? 'modo claro' : 'modo escuro'}</span>
+					</div>
+					{!darkMode ? <IoMoonOutline /> : <FiSun />}
+				</button>
+			</div>
 		</nav>
 	);
 };
