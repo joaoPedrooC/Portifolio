@@ -56,7 +56,7 @@ export const projects: Array<IProject> = [
   },
   {
     name: 'User e Courses',
-    description: 'O projeto User e Courses simula uma API rest de uma plataforma de cursos, em que é possível cadastrar, editar, buscar e excluir alunos e cursos. Além disso, conta com autenticação e autorização, então apenas administradores conseguem executar algumas ações.',
+    description: 'O projeto User e Courses simula uma API rest de uma plataforma de cursos, em que é possível cadastrar, editar, buscar e excluir alunos e cursos.',
     type: 'Backend',
     githubUrl: 'https://github.com/Kenzie-Academy-Brasil-Developers/crud_admin_m4-joaoPedrooC'
   },
