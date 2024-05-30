@@ -11,8 +11,6 @@ export const ProjectsSection = () => {
   const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
     if (entry.isIntersecting) {
       setIsVisible(true)
-    } else {
-      setIsVisible(false)
     }
   }))
 
