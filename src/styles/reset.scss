@@ -21,3 +21,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-block: 3.3rem;
 }
+
+main, header {
+  transition: .5s ease;
+}
