@@ -20,16 +20,6 @@ img, svg {
 html {
   scroll-behavior: smooth;
   scroll-padding-block: 3.3rem;
-
-  &::-webkit-scrollbar {
-    background-color: var(--background-color);
-    width: 5px;
-  }
-  
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--color-secondary);
-    border-radius: 8px;
-  }
 }
 
 main, header {
